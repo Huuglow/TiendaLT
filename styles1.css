@@ -1,0 +1,73 @@
+@font-face {
+	font-family: 'bebas';
+	src: url(fonts/BBHSansBartle-Regular.ttf) format('truetype');
+}
+
+
+
+
+
+body{
+	background: #000;
+	color: #fff;
+}
+h1{
+	color: #6991c3;
+	font-family: 'bebas', sans-serif;
+	font-size: 50px;
+	margin: 60px 0;
+	text-align: center;
+	text-shadow: #fff 2px 2px 4px;
+}
+.subtitle{
+	color: #6991c3;
+	font-family: "Inconsolata", monospace;
+	font-size: 35px;
+	text-align: center;
+	margin: 30px;	
+	padding: 30px;
+}
+ul a{
+	color: #fff;
+	text-decoration: none;
+	margin: 30px 15px;
+	font-size: 30px;
+	font-family: "Inconsolata", monospace;
+}
+.search-container{
+	display: flex;
+	float: right;
+	margin-top: -50px;
+	width: 300px;
+}
+.search{
+	flex-grow: 1;
+	border:1px solid #ccc;
+	border-radius: 4pxx 0 0 4px;
+	padding: 10px;
+	border-right: none;
+}
+.btn-buscar{
+	border: 1px solid #ccc;
+	border-left: none;
+	border-radius: 0 4px 4px 0;
+	background-color: #f1f1f1;
+	color: #333;
+	padding: 10px 15px;
+}
+.btn-buscar:hover{
+	background-color: #ddd;
+}
+
+.history{
+	text-align: left;
+	font-family: "Inconsolata", monospace;
+	font-size: 30px;
+	margin-right: 200px;
+	padding: 0 100px;
+	float: left;
+}
+.sujetogris{
+	float: right;
+	width: 40%;
+}
