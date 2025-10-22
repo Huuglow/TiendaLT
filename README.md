@@ -1,2 +1,2 @@
-# TiendaLT
-Tienda online enfocada al streetwear y al oversize.
+# Loose-Threads
+Tienda online de ropa con estilo oversize and streetwear
