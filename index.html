@@ -2,47 +2,145 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> 
-	<title>Loose Threads</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+	<title>Loose Threads</title><!--Titulo de la pestana-->
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-	
-	<link rel="stylesheet" href="styles1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet"><!-- Fuente Inconsolata, utiliza en parrafos-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"><!--Icon Bootstrap-->
+	<link rel="stylesheet" href="styles.css"><!--CSS-->
 </head>
 <body>
-	<div class="resolucion">
-	<div id="container">
-		<header>
-			<h1>Loose Threads</h1>
+	<div class="resolucion"><!--Resolucion para diferentes pantallas-->
+	<div id="container"><!--contenedor de Inicio-->
+		<header id="inicio"><!--Encabezado Titulo y subtitulo de pagina-->
+			<div class="titulo-centrado">
+					<h1>Loose<br>Threads</h1></main>
+				<p class="frase-abajo">ROMPEMOS MOLDES. CONSTRUIMOS ESTILO</p>
+			</div>
 		</header>
-		<nav>
-			<ul>
-				<a href="index.html">HOME<a/>
-				<a href="men.html">MEN<a/>
-				<a href="women.html">WOMAN</a>
-			</ul>
+		<aside><!--Menu lateral desplegable-->
+	<button class="open-btn" onclick="openNav()">
+		<i class="bi bi-battery"></i><!--Boton que abre menu-->
+	</button>
+    <nav id="mySidebar" class="sidebar"><!--Lista de apartados menu desplegable-->
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="#inicio" onclick="closeNav()">Inicio</a>
+        <a href="#seccion-de-venta" onclick="closeNav()">Productos</a>
+        <a href="/nosotros.html" onclick="closeNav()">Sobre Nosotros</a>
+        <a href="/contacto.html" onclick="closeNav()">Contacto</a>
+        
+        <div class="cart-section"><!--Texto y boton para ir al apartado de carrito-->
+            <h4>🛒 Mi Carrito</h4>
+            <a href="/carrito.html" class="btn-ver-carrito">Ver Carrito Completo</a>
+        </div>
+    </aside>
 		</nav>
-		<!--<div class="search-container">
-		<form>
-			<input type="text"  placeholder="Buscar..." class="search" >
-			<input type="Submit" value="Buscar" class="btn-buscar">
-		</form>
-		</div>--> <!--caja de busqueda deshabilitada por error en diseno-->
-		<article class="info">
-		<h2 class="subtitle">ROMPEMOS MOLDES. CONSTRUIMOS ESTILO</h2>
-		<p class="history">En 2017, desde León, Guanajuato, dos jóvenes visionarios notaron una brecha: México necesitaba una voz auténtica en el streetwear. Cansados de lo convencional, fundaron Loose Threads con una misión clara: deshilachar las normas y redefinir el estilo urbano.</p>
-
-<p class="history">Su apuesta fue el oversize, no solo como moda, sino como una declaración de libertad y fluidez. Cada pieza es un lienzo que invita a la comodidad y a la expresión sin límites, rompiendo con lo establecido y celebrando la individualidad.</p>
-	</article>	
-		<div class="wrapped">
+		<section class="info"><!--Seccion de informacion de la marca-->
+		<h2 class="subtitle"></h2><!--Subtitulo por el momento no existe-->
+		<p class="history">En 2017, desde León, Guanajuato, dos jóvenes visionarios notaron una brecha: México necesitaba una voz auténtica en el streetwear. Cansados de lo convencional, fundaron Loose Threads con una misión clara: deshilachar las normas y redefinir el estilo urbano.<br>Su apuesta fue el oversize, no solo como moda, sino como una declaración de libertad y fluidez. Cada pieza es un lienzo que invita a la comodidad y a la expresión sin límites, rompiendo con lo establecido y celebrando la individualidad.<br><!--Historia breve-->
+		</section>	
+		<div class="wrapped"><!--Envoltura de imagenes que estan despues del texto-->
 			<img src="images/logo4k.png" alt="logosinfondopng" class="graf" width="auto">
 			<img src="images/sujetogris.png" alt="sujetogris" class="sujetogris" width="auto">
 		</div>
+	</div>
+	<section id="seccion-de-venta" class="seccion-venta"><!--Apartado de objetos en venta-->
+	<h2 class="categ">Oversize</h2><!--Categoria-->
+	
+<div class="grid-productos">
+    
+	<article class="tarjeta-producto">
+		<img src="images/cargo.png" alt="Cargo tipo pana, corte acho"><!--Imagen del Producto-->
+		<div class="info-producto">
+        	<h3>Pantalon Cargo</h3><!--Nombre Del Producto-->
+        	<p class="descripcion">Pantalon cargo de pana con bolsas grandes a los costados</p><!--Descripcion rapida del producto-->
+        	<p class="precio">$1,200.00 MXN</p><!--Precio-->
+        	<button class="boton-comprar">Agregar al carrito</button><!--Boton Agregar al carrito-->
+		</div>
+	</article>
+	
+	<article class="tarjeta-producto">
+		<img src="images/rompevientos.jpg" alt="Chamarra Rompevientos" width="20%">
+		<div class="info-producto">
+        	<h3>Rompevientos Camuflajeada</h3>
+        	<p class="descripcion">Chamarra rompevientos camuflaje verde</p>
+        	<p class="precio">$1,000.00 MXN</p>
+        	<button class="boton-comprar">Agregar al carrito</button><article class="tarjeta-producto">
+		</div>
+	</article>
+	
+	<article class="tarjeta-producto">
+		<img src="images/remera.jpg" alt="Cargo tipo pana, corte acho" width="300px" height="300px">
+		<div class="info-producto">
+        	<h3>Playera Oversize</h3>
+        	<p class="descripcion">Playera oversize color negra con estampado Byond Future</p>
+        	<p class="precio">$500.00 MXN</p>
+        	<button class="boton-comprar">Agregar al carrito</button>
+		</div>
+    </article>
+	<article class="tarjeta-producto">
+		<img src="images/sudaderastwd.jpg" alt="Sudadera Negra oversize color negra" width="auto">
+		<div class="info-product">
+			<h3>Sudadera STWD</h3>
+			<p class="descripcion">Sudadera Negra oversize color negra </p>
+			<p class="precio">$900.00</p>
+			<button class="boton-comprar">Agregar al carrito</button>
+		</div>
+	</article>
+	<article class="tarjeta-producto">
+		<img src="images//camisajuice.jpg" alt="camisa blanca con estampado Juice de sandia" width="auto">
+		<div class="info-product">
+			<h3>Camisa JUICE</h3>
+			<p class="descripcion">camisa blanca con estampado Juice de sandia</p>
+			<p class="precio">$500.00</p>
+			<button class="boton-comprar">Agregar al carrito</button>
+		</div>
+	</article>
+	<article class="tarjeta-producto">
+		<img src="images/cargogris.jpg" alt="pantalon cargo color gris con bolsas a los costados" width="auto">
+		<div class="info-product">
+			<h3>Cargo Gris</h3>
+			<p class="descripcion">pantalon cargo color gris con bolsas a los costados</p>
+			<p class="precio">$1,200.00</p>
+			<button class="boton-comprar">Agregar al carrito</button>
+		</div>
+	</article>
+	<article class="tarjeta-producto">
+		<img src="images/chamarrapana.jpg" alt="chamarra de pana cafe claro" width="auto">
+		<div class="info-product">
+			<h3>Chamarra de pana</h3>
+			<p class="descripcion">chamarra de pana cafe claro</p>
+			<p class="precio">$1,500.00</p>
+			<button class="boton-comprar">Agregar al carrito</button>
+		</div>
+	</article>
+	<article class="tarjeta-producto">
+		<img src="images/camisa.png" alt="camisa color menta estampado de Trunk" width="auto">
+		<div class="info-product">
+			<h3>Camisa Trunk</h3>
+			<p class="descripcion">camisa color menta estampado de Trunk</p>
+			<p class="precio">$500.00</p>
+			<button class="boton-comprar">Agregar al carrito</button>
+		</div>
+	</article>
 
+</div>
+
+
+</div>
+	
+	<article class="tarjeta-producto">
+	</article>
+
+	</div>
+</section>
 	
 	
 
 </div>
-</div>	
-</body>
+</div>
+	<script src="script.js"></script><!--JavaScript--></body>
+</html>
