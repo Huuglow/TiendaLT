@@ -1,11 +1,23 @@
 body{
 	background: #365581;
 }
+.resolucion{
+	width: 99%;
+	text-align: center;
+}
+/**mobile**/
+@media (max-width: 767px){
+}
+/**tablet**/
+@media (min-width: 768px) and (max-width: 990px){
+}
+/**desktop**/
+@media (min-width: 991px){
+}
 
 header{
 	font-family: Impact;
 	background: #816236;
-	weight: 100% auto;
 	padding: 10px;
 	color: #558136;
 	font-size: 40px;
@@ -46,7 +58,7 @@ nav ul li{
 }
 *{
 	margin:0px;
-	*/padding:0 10px 0 10px;
+
 	box-sizing:border-box;
 }
 
@@ -58,7 +70,7 @@ nav ul li{
 	text-align:center;
 	margin: 0 auto; 
 	width:30%;
-	*//display:inline-block;
+	/**display:inline-block;*/ /*error en diseno se van corrigiendo cositas*/
 	font-size:20px;
 	padding:40px 20px;
 }
