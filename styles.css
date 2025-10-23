@@ -71,9 +71,9 @@ body{
 h1{
 	color: #6991c3;/* Color **/
 	font-family: 'bebas', sans-serif;/* Fuente **/
-	font-size: 90px;/* Tamano**/
+	font-size: 70px;/* Tamano**/
 	padding: 20px;/* Relleno borde**/
-	margin: 20px 0;/* Separacion del borde  **/
+	margin: 0 0 0 0;/* Separacion del borde  **/
 	text-align: center;/* Texto Al Centro**/
 	text-shadow: #c8d7db 2px 2px 4px;/* Sombra Del Texto**/
 	transform:scaleX(180%)/* Alargue Del Texto En Horizontal**/
@@ -106,19 +106,14 @@ h1 {
   }
 }
 /* Imagen Del Graffiti**/
-.graf{
-	background-position: left;
-	margin: 0% 50% 0 10%;
-	width: 100%;/* Tamano**/
+.contenedor-padre {
+display: flex;
+  justify-content: center; /* ¡La clave! Empuja los elementos a los extremos */
+  align-items: center;            /* Los centra verticalmente */
+  width: 100%;
 }
-/* Imagen del Sujeto Con Sudadera Gris **/
-.sujetogris{
-	background-position: right;
-	margin-top: -60%;
-	margin-right: -20%;
-	margin-left: 50%;
-	width: 60%;
-
+.logo{
+  width: 80%;
 }
 /* Estilo general del cuerpo */
 body {
@@ -247,7 +242,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 40%;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   /* Cambios De Escala Suaves*/
@@ -296,7 +291,7 @@ body {
   .grid-productos {
     flex-direction: column;/* Cambia la dirección a vertical */
     align-items: center;/* Centra los artículos apilados */
-    width: 80%;
+    width:80%;
   }
 }
 @media (max-width: 768px) {
@@ -307,4 +302,8 @@ body {
     /* VUELVE A AÑADIR LA TRANSICIÓN AQUÍ */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
+}
+.descripcion{
+  font-family: 'Inconsolata';
+  font-size: 20px;
 }
