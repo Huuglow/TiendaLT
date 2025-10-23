@@ -31,7 +31,7 @@ h1{
 	color: #6991c3;
 	font-family: "Inconsolata", monospace;
 	font-size: 35px;
-	float: center:right;
+	float: right;
 	margin: 10px;	
 	padding: 10px;
 }
@@ -76,16 +76,7 @@ ul a{
 	
 	float: left;
 }
-.graf{
-	background-position: left;
-	margin: 0% 50% 0 10%;
-	width: 100%;
-}
 .sujetogris{
-	background-position: right;
-	margin-top: -60%;
-	margin-right: -20%;
-	margin-left: 50%;
-	width: 60%;
-
+	float: right;
+	width: 50%;
 }
