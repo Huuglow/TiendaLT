@@ -246,7 +246,7 @@ body {
 .tarjeta-producto {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -260,7 +260,7 @@ body {
 /* Zoom Al Poner Cursor Encima*/
 .tarjeta-producto:hover {
   /* --- ESTO ES LO QUE AGRANDA EL ARTÍCULO --- */
-  transform: scale(108%);/* Aumenta el tamaño en un 5% (1.05 = 105% del tamaño original) */ 
+  transform: scale(1.05);/* Aumenta el tamaño en un 5% (1.05 = 105% del tamaño original) */ 
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);/* Opcional: una sombra más pronunciada para resaltar aún más */
 }
 
@@ -297,5 +297,14 @@ body {
     flex-direction: column;/* Cambia la dirección a vertical */
     align-items: center;/* Centra los artículos apilados */
     width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .tarjeta-producto {
+    /* Tu regla para ajustar el ancho */
+    width: 90%; 
+
+    /* VUELVE A AÑADIR LA TRANSICIÓN AQUÍ */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 }
