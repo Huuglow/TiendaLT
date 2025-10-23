@@ -1,5 +1,30 @@
 :root{
     scroll-behavior: smooth;
+/* Define La Animacion De Desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /*Empieza Totalmente Transparente*/
+  }
+  to {
+    opacity: 1; /* Termina Totalmente Visible*/
+  }
+}
+
+/* Aplica La Animacion Al Cuerpo De La Pagina*/
+body {
+ animation: fadeIn 1s ease-in-out;  /* Nombre De La Animacion, Duracion y Tipo De Animacion */
+}
+}
+.fade-in-section {
+  opacity: 0;/* Empieza Invisible */
+  transform: translateY(20px);/* Empieza Ligeramente Desplazada Hacia Abajo*/
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;/* Define La Animacion De La Transicion Para Que Sea Suave */
+}
+
+/* La Clase Se Habilitara Con JavaScript Cuando La Seccion Sea Visible*/
+.fade-in-section.is-visible {
+  opacity: 1;/* Se Vuelve Visible*/
+  transform: translateY(0);/* Vuelve a Su Posicion Original */
 }
 @font-face {
 	font-family: 'bebas';
@@ -26,6 +51,7 @@
 /**desktop**/
 @media (min-width: 991px){
 }
+
 /*Cuerpo**/ 
 body{
 	background: #000;/*Color De Fondo**/
@@ -234,7 +260,7 @@ body {
 /* Zoom Al Poner Cursor Encima*/
 .tarjeta-producto:hover {
   /* --- ESTO ES LO QUE AGRANDA EL ARTÍCULO --- */
-  transform: scale(1.05);/* Aumenta el tamaño en un 5% (1.05 = 105% del tamaño original) */ 
+  transform: scale(108%);/* Aumenta el tamaño en un 5% (1.05 = 105% del tamaño original) */ 
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);/* Opcional: una sombra más pronunciada para resaltar aún más */
 }
 
@@ -244,7 +270,7 @@ body {
   flex-direction: column;
   align-items: center; /* Centra todo horizontalmente */
   text-align: center;
-  padding: 15px;
+  padding: 15px 15px 25px 15px;
 }
 /*Tamano De Tarjeta**/
 .tarjeta-producto img {
@@ -264,10 +290,12 @@ body {
   padding: 10px 20px;
   width: 80%;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 @media (max-width: 768px) {
   .grid-productos {
     flex-direction: column;/* Cambia la dirección a vertical */
     align-items: center;/* Centra los artículos apilados */
+    width: 80%;
   }
 }

@@ -15,41 +15,41 @@
 <body>
 	<div class="resolucion"><!--Resolucion para diferentes pantallas-->
 	<div id="container"><!--contenedor de Inicio-->
-		<header id="inicio"><!--Encabezado Titulo y subtitulo de pagina-->
+		<header id="inicio" class="fade-in-section"><!--Encabezado Titulo y subtitulo de pagina-->
 			<div class="titulo-centrado">
 					<h1>Loose<br>Threads</h1></main>
 				<p class="frase-abajo">ROMPEMOS MOLDES. CONSTRUIMOS ESTILO</p>
 			</div>
-		</header>
-		<aside><!--Menu lateral desplegable-->
-	<button class="open-btn" onclick="openNav()">
-		<i class="bi bi-battery"></i><!--Boton que abre menu-->
-	</button>
-    <nav id="mySidebar" class="sidebar"><!--Lista de apartados menu desplegable-->
-        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
-        <a href="#inicio" onclick="closeNav()">Inicio</a>
-        <a href="#seccion-de-venta" onclick="closeNav()">Productos</a>
-        <a href="/nosotros.html" onclick="closeNav()">Sobre Nosotros</a>
-        <a href="/contacto.html" onclick="closeNav()">Contacto</a>
-        
-        <div class="cart-section"><!--Texto y boton para ir al apartado de carrito-->
-            <h4>🛒 Mi Carrito</h4>
-            <a href="/carrito.html" class="btn-ver-carrito">Ver Carrito Completo</a>
-        </div>
-    </aside>
-		</nav>
 		<section class="info"><!--Seccion de informacion de la marca-->
 		<h2 class="subtitle"></h2><!--Subtitulo por el momento no existe-->
 		<p class="history">En 2017, desde León, Guanajuato, dos jóvenes visionarios notaron una brecha: México necesitaba una voz auténtica en el streetwear. Cansados de lo convencional, fundaron Loose Threads con una misión clara: deshilachar las normas y redefinir el estilo urbano.<br>Su apuesta fue el oversize, no solo como moda, sino como una declaración de libertad y fluidez. Cada pieza es un lienzo que invita a la comodidad y a la expresión sin límites, rompiendo con lo establecido y celebrando la individualidad.<br><!--Historia breve-->
 		</section>	
-		<div class="wrapped"><!--Envoltura de imagenes que estan despues del texto-->
+			<div class="wrapped"><!--Envoltura de imagenes que estan despues del texto-->
 			<img src="images/logo4k.png" alt="logosinfondopng" class="graf" width="auto">
 			<img src="images/sujetogris.png" alt="sujetogris" class="sujetogris" width="auto">
 		</div>
+	</header>
+ <aside><!--Menu lateral desplegable-->
+	<button class="open-btn" onclick="openNav()">
+	 <i class="bi bi-battery"></i><!--Boton que abre menu-->
+	</button>
+    <nav id="mySidebar" class="sidebar"><!--Lista de apartados menu desplegable-->
+     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+     <a href="#inicio" onclick="closeNav()">Inicio</a>
+     <a href="#seccion-de-venta" onclick="closeNav()">Productos</a>
+     <a href="/nosotros.html" onclick="closeNav()">Sobre Nosotros</a>
+	 <a href="/contacto.html" onclick="closeNav()">Contacto</a>
+        
+    <div class="cart-section"><!--Texto y boton para ir al apartado de carrito-->
+     <h4>🛒 Mi Carrito</h4>
+     <a href="/carrito.html" class="btn-ver-carrito">Ver Carrito Completo</a>
+    </div>
+</aside>
+
 	</div>
-	<section id="seccion-de-venta" class="seccion-venta"><!--Apartado de objetos en venta-->
-	<h2 class="categ">Oversize</h2><!--Categoria-->
-	
+	<section id="seccion-de-venta" class="seccion-venta fade-in-section"><!--Apartado de objetos en venta-->
+		<h2 class="categ">MERCH</h2><!--Categoria-->
+	</section>
 <div class="grid-productos">
     
 	<article class="tarjeta-producto">
@@ -81,15 +81,17 @@
         	<button class="boton-comprar">Agregar al carrito</button>
 		</div>
     </article>
-	<article class="tarjeta-producto">
-		<img src="images/sudaderastwd.jpg" alt="Sudadera Negra oversize color negra" width="auto">
-		<div class="info-product">
-			<h3>Sudadera STWD</h3>
-			<p class="descripcion">Sudadera Negra oversize color negra </p>
-			<p class="precio">$900.00</p>
-			<button class="boton-comprar">Agregar al carrito</button>
+
+		<article class="tarjeta-producto">
+		<img src="images/sudaderastwd.jpg" alt="Cargo tipo pana, corte acho" width="300px" height="300px">
+		<div class="info-producto">
+        	<h3>Sudadera STWD</h3>
+        	<p class="descripcion">Sudadera negra con parches de STWD</p>
+        	<p class="precio">$1,000.00 MXN</p>
+        	<button class="boton-comprar">Agregar al carrito</button>
 		</div>
-	</article>
+    </article>
+	
 	<article class="tarjeta-producto">
 		<img src="images//camisajuice.jpg" alt="camisa blanca con estampado Juice de sandia" width="auto">
 		<div class="info-product">
@@ -126,7 +128,7 @@
 			<button class="boton-comprar">Agregar al carrito</button>
 		</div>
 	</article>
-
+	</section>
 </div>
 
 
@@ -134,9 +136,7 @@
 	
 	<article class="tarjeta-producto">
 	</article>
-
 	</div>
-</section>
 	
 	
 
