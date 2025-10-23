@@ -244,9 +244,9 @@ body {
 
 /* Estilo para cada tarjeta de producto (donde se aplica el efecto) */
 .tarjeta-producto {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 30%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
