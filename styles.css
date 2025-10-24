@@ -81,7 +81,7 @@ h1{
 /* Pantallas pequenas **/
 @media (max-width: 768px) {
 h1 {
-    transform: scaleX(120%);/*Fuente Mas Pequena */
+    transform: scaleX(1);/*Fuente Mas Pequena */
     letter-spacing: normal;/*Quita El Espaciado Extra */
     font-size: 2.5em;/*Tamano Menor De Texto*/
 }
